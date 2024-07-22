@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="enter_amount_hint">Введите сумму</string>
+    <string name="convert_button_text">Конвертировать</string>
+    <string name="conversion_error">Пожалуйста, введите сумму для перевода</string>
+    <string name="application_icon_desc">Иконка приложения</string>
+    <string name="from_text">Из:</string>
+    <string name="to_text">В:</string>
+    <string name="back_to_converter_button_desc">Назад к конвертеру</string>
+    <string name="api_exception_message">Произошла неожиданная ошибка с API</string>
+    <string name="http_exception_format">Произошла HTTP ошибка с кодом %d</string>
+    <string name="io_exception_message">Не получилось загрузить данные, пожалуйста, проверьте свое интернет-соединение</string>
+    <string name="unexpected_exception_message">Произошла неожиданная ошибка</string>
+    <string name="no_exchange_rate_exception_message">Не получилось найти курс обмена из %s в %s</string>
+</resources>

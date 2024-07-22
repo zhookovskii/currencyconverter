@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="enter_amount_hint">Enter amount</string>
+    <string name="convert_button_text">Convert</string>
+    <string name="currency_amount_format" translatable="false">%s %s</string>
+    <string name="exchange_rate_format" translatable="false">1 %s = %f %s</string>
+    <string name="currency_name_placeholder" translatable="false">(Faraway dollar)</string>
+    <string name="conversion_error">Please enter an amount to convert</string>
+    <string name="application_icon_desc">Application icon</string>
+    <string name="from_text">From:</string>
+    <string name="to_text">To:</string>
+    <string name="back_to_converter_button_desc">Back to converter</string>
+    <string name="equals_symbol" translatable="false">=</string>
+    <string name="api_exception_message">Unexpected error occurred with the API</string>
+    <string name="http_exception_format">HTTP error occurred, the code is %d</string>
+    <string name="io_exception_message">Unable to load data, please check your internet connection</string>
+    <string name="unexpected_exception_message">Unexpected error occurred</string>
+    <string name="no_exchange_rate_exception_message">Unable to find exchange rate from %s to %s</string>
+    <string-array name="currency_array">
+        <item>USD (US Dollar)</item>
+        <item>EUR (Euro)</item>
+        <item>RUB (Russian Ruble)</item>
+        <item>GBP (British Pound)</item>
+        <item>CAD (Canadian Dollar)</item>
+        <item>AUD (Australian Dollar)</item>
+        <item>JPY (Japanese Yen)</item>
+        <item>INR (Indian Rupee)</item>
+        <item>NZD (New Zealand Dollar)</item>
+        <item>CHF (Swiss Frank)</item>
+        <item>ZAR (South African Rand)</item>
+        <item>ILS (Israeli Shekel)</item>
+        <item>MXN (Mexican Peso)</item>
+        <item>RSD (Serbian Dinar)</item>
+    </string-array>
+</resources>

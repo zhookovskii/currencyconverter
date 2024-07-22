@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@+id/converterFragment"
+        android:name="com.zhukovskii.currencyconverter.view.ConverterFragment"
+        android:label="ConverterFragment" >
+        <action
+            android:id="@+id/action_converterFragment_to_resultFragment"
+            app:destination="@id/resultFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.zhukovskii.currencyconverter.view.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_converterFragment"
+            app:destination="@id/converterFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.zhukovskii.currencyconverter.view.ResultFragment"
+        android:label="ResultFragment" />
+</navigation>

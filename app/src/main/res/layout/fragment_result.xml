@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/from_currency_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="32dp"
+        android:text="@string/currency_amount_format"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="24sp"
+        android:textColor="?colorPrimary"
+        android:breakStrategy="balanced"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/from_currency_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/currency_name_placeholder"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="11sp"
+        android:textColor="?colorSecondary"
+        app:layout_constraintStart_toEndOf="@id/from_currency_amount"
+        app:layout_constraintTop_toTopOf="@id/from_currency_amount"
+        app:layout_constraintBottom_toBottomOf="@id/from_currency_amount"/>
+
+    <TextView
+        android:id="@+id/equals_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/equals_symbol"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="24sp"
+        android:textColor="?colorPrimary"
+        app:layout_constraintTop_toTopOf="@id/from_currency_amount"
+        app:layout_constraintStart_toEndOf="@id/from_currency_name"
+        app:layout_constraintBottom_toBottomOf="@id/from_currency_amount"/>
+
+    <TextView
+        android:id="@+id/to_currency_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="32dp"
+        android:text="@string/currency_amount_format"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="32sp"
+        android:textColor="?colorPrimary"
+        android:breakStrategy="balanced"
+        app:layout_constraintTop_toBottomOf="@id/from_currency_amount"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/to_currency_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/currency_name_placeholder"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="11sp"
+        android:textColor="?colorSecondary"
+        app:layout_constraintStart_toEndOf="@id/to_currency_amount"
+        app:layout_constraintTop_toTopOf="@id/to_currency_amount"
+        app:layout_constraintBottom_toBottomOf="@id/to_currency_amount"/>
+
+    <TextView
+        android:id="@+id/exchange_rate_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/exchange_rate_format"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14sp"
+        android:textColor="?colorSecondary"
+        app:layout_constraintTop_toBottomOf="@id/to_currency_amount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="50dp"
+        android:padding="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/arrow"
+        android:contentDescription="@string/back_to_converter_button_desc"
+        android:background="@drawable/button_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
