@@ -15,6 +15,7 @@
         android:textSize="24sp"
         android:textColor="?colorPrimary"
         android:breakStrategy="balanced"
+        android:textIsSelectable="true"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
@@ -55,6 +56,7 @@
         android:textSize="32sp"
         android:textColor="?colorPrimary"
         android:breakStrategy="balanced"
+        android:textIsSelectable="true"
         app:layout_constraintTop_toBottomOf="@id/from_currency_amount"
         app:layout_constraintStart_toStartOf="parent"/>
 
