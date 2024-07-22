@@ -7,12 +7,12 @@ import com.zhukovskii.currencyconverter.model.db.ExchangeRateDatabase
 class ExchangeRateRepository(
     private val api: ExchangeRateApi,
     private val db: ExchangeRateDatabase
-) {
+): Repository {
 
     /**
      * Fetches fresh data from the API and writes it to the app database
      */
-    suspend fun fetchFromApi(baseCode: String) {
+    override suspend fun fetchFromApi(baseCode: String) {
 
         val response = api.getConversionRates(baseCode)
 
@@ -34,7 +34,10 @@ class ExchangeRateRepository(
     /**
      * Retrieves the exchange rate for given currencies from the app database
      */
-    suspend fun getExchangeRate(baseCode: String, targetCode: String): ExchangeRate? {
+    override suspend fun getExchangeRate(
+        baseCode: String,
+        targetCode: String
+    ): ExchangeRate? {
         return db.dao.getExchangeRate(baseCode, targetCode)
     }
 }

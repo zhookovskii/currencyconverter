@@ -2,7 +2,7 @@ package com.zhukovskii.currencyconverter.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.zhukovskii.currencyconverter.model.repository.ExchangeRateRepository
+import com.zhukovskii.currencyconverter.model.repository.Repository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -16,7 +16,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class ConverterViewModel @Inject constructor(
-    private val repository: ExchangeRateRepository
+    private val repository: Repository
 ): ViewModel() {
 
     private val _conversionResultFlow: MutableStateFlow<ConversionResult> =

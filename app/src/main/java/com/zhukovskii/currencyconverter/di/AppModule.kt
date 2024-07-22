@@ -8,6 +8,7 @@ import com.zhukovskii.currencyconverter.config.Config
 import com.zhukovskii.currencyconverter.model.api.ExchangeRateApi
 import com.zhukovskii.currencyconverter.model.db.ExchangeRateDatabase
 import com.zhukovskii.currencyconverter.model.repository.ExchangeRateRepository
+import com.zhukovskii.currencyconverter.model.repository.Repository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -49,5 +50,5 @@ object AppModule {
     fun provideRepository(
         api: ExchangeRateApi,
         db: ExchangeRateDatabase
-    ) = ExchangeRateRepository(api, db)
+    ): Repository = ExchangeRateRepository(api, db)
 }
