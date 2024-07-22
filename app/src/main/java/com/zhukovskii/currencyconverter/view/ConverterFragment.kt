@@ -62,6 +62,14 @@ class ConverterFragment : Fragment() {
                     viewModel.makeConversion(fromCurrency, toCurrency, amount)
                 }
             }
+
+            swapButton.setOnClickListener {
+                val fromPosition = fromCurrencyList.selectedItemPosition
+                val toPosition = toCurrencyList.selectedItemPosition
+
+                fromCurrencyList.setSelection(toPosition)
+                toCurrencyList.setSelection(fromPosition)
+            }
         }
 
         viewLifecycleOwner.lifecycleScope.launch {

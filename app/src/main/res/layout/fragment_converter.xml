@@ -54,6 +54,22 @@
 
     </LinearLayout>
 
+    <ImageButton
+        android:id="@+id/swap_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="50dp"
+        android:padding="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/up_down"
+        android:contentDescription="@string/swap_currencies_desc"
+        android:background="@drawable/button_background"
+        app:tint="?colorSecondary"
+        app:layout_constraintBottom_toTopOf="@id/to_currency_layout"
+        app:layout_constraintTop_toBottomOf="@id/from_currency_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <LinearLayout
         android:id="@+id/to_currency_layout"
         android:layout_width="match_parent"

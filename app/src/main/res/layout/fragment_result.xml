@@ -94,6 +94,7 @@
         android:src="@drawable/arrow"
         android:contentDescription="@string/back_to_converter_button_desc"
         android:background="@drawable/button_background"
+        app:tint="?colorSecondary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
